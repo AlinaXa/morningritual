@@ -112,7 +112,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-
+  padding-top: 120px;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -697,7 +697,6 @@ a.nav-btn:hover::after {
 
 }
 
-/* 2. PHONE – max 768px */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -707,6 +706,18 @@ a.nav-btn:hover::after {
 
   .nav-left {
     font-size: 24px;
+  }
+
+  /* 👇 ADAUGĂ AICI */
+  .hero-section {
+    padding-top: 140px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 80px;
+  }
+
+  .hero-title {
+    font-size: 36px;
   }
 
   .nav-right {
@@ -782,9 +793,9 @@ a.nav-btn:hover::after {
 @media (max-width: 768px) {
   .logo-img {
     height: 48px;
+    max-height: 80px;
   }
 }
-
 
 @keyframes goldenFadeIn {
   from {
