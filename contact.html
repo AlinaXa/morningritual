@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Contact – Morning Ritual Coffeeshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="top-header">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/logo.png" alt="Morning Ritual" class="logo-img" />
+        </a>        
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact us</a></li>          
+        </ul>
+      </nav>
+    </div>
+  </header>  
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section page-padding">
+    <div class="contact-container">   
+      <div class="contact-info">
+        <h1 class="contact-title">Let’s Get in Touch</h1>
+        <p class="contact-subtitle">We’d love to hear from you</p>
+        <p class="contact-hours">
+          ☕ Monday – Sunday<br>
+          🕗 8:00 AM – 4:00 PM
+        </p>
+      </div>
+
+      <form action="https://formsubmit.co/aalinabratu@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="hidden" name="_next" value="https://alinabratu.github.io/contact.html">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Send Message</button>
+      </form>          
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Morning Ritual. All rights reserved.</p>
+      <div class="footer-links">
+    </div>
+  </footer>  
+  <script>
+    window.onload = function () {
+      const form = document.querySelector('.contact-form');
+      if (form) form.reset();
+    };
+  </script>  
+  <script>
+    if (window.location.href.includes("contact.html") && document.referrer.includes("formsubmit")) {
+      const thankYou = document.createElement("p");
+      thankYou.textContent = "Thank you for your message!";
+      thankYou.style.color = "#228B22";
+      thankYou.style.marginTop = "20px";
+      thankYou.style.fontSize = "16px";
+      document.querySelector(".contact-form").after(thankYou);
+    }
+  </script>
+  <script>
+    window.onload = function () {
+      const form = document.querySelector(".contact-form");
+      if (form) form.reset();
+      if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+      }
+    };
+  </script>
+  <script>
+    window.addEventListener('pageshow', function(event) {
+      if (event.persisted || performance.navigation.type === 2) {
+        document.querySelector('form').reset();
+      }
+    });
+  </script>  
+</body>
+</html>
