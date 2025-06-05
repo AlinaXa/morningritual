@@ -1,39 +1,18 @@
-# ☕ Coven Coffeeshop
+# ☕ Morning Ritual Coffeeshop
 
-A handmade café landing page made with vanilla HTML, CSS & optional JS.
+A cozy, minimalist website for a fictional coffee shop – inspired by real barista love and aesthetic vibes.
 
----
+🌐 **Live site:**  
+👉 [https://alinaxa.github.io/morningritual/index.html](https://alinaxa.github.io/morningritual/index.html)
 
-## 🗂 File Structure
+## 🔧 Built With
+- HTML5 / CSS3
+- Responsive design with media queries
+- Vanilla JavaScript (light)
+- Hosted on GitHub Pages
 
-- `index.html` → Homepage (hero + CTA)
-- `about.html` → Café story
-- `menu.html` → Coffee & snacks menu
-- `contact.html` → Contact form & hours
-- `style.css` → Styling
-- `script.js` → (optional JS logic)
-- `assets/` → All images and design elements
+## 📸 Screenshots
+Coming soon...
 
----
-
-## ✨ Features
-
-- Soft gold gradients & blur-glass UI
-- Handcrafted layout, responsive
-- Pastel color palette and custom buttons
-- Animated button hover & smooth transitions
-- Custom logo integration
-
----
-
-## 👩‍💻 Author
-
-**Alina Bratu**  
-Front-end enthusiast & creative designer  
-*New to code. Great at visual harmony.*
-
----
-
-## 📝 License
-
-Open-source for portfolio & learning purposes.
+## 👩‍💻 Made with love by  
+**Alina Bratu – web designer & aesthetic control freak.**
