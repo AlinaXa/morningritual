@@ -4,9 +4,13 @@
 
 ### Specialty coffee e-commerce and brewing experience
 
-A responsive web concept that connects product discovery, preparation education, customer loyalty and a calm visual identity.
+A responsive web project that connects product discovery, preparation education, customer loyalty and a calm visual identity.
 
-[**View Live Website**](https://alinaxa.github.io/morningritual/) · [**Browse Repository**](https://github.com/AlinaXa/morningritual)
+[**View Live Website**](https://alinaxa.github.io/morningritual/) · [**View Source Code**](https://github.com/AlinaXa/morningritual)
+
+<br>
+
+<img src="docs/screenshots/01-morning-ritual-hero.png" alt="Morning Ritual home page" width="100%">
 
 </div>
 
@@ -30,10 +34,28 @@ The interface is available in **English and Romanian** and is built entirely wit
 - tools, ratios, temperatures, timing, blooming, pre-infusion and troubleshooting;
 - personal account concept with orders, favourites and loyalty points;
 - Coffee & Tea Journal saved with LocalStorage;
-- cart and checkout prototype;
+- cart and checkout flow;
 - bilingual EN / RO interface;
 - working contact form with Web3Forms and visible success confirmation;
 - responsive navigation and mobile layouts.
+
+## Screenshots
+
+| Product discovery | Shop filters |
+|---|---|
+| <img src="docs/screenshots/02-morning-ritual-products.png" alt="Featured products section"> | <img src="docs/screenshots/03-morning-ritual-shop-filters.png" alt="Shop filters and product grid"> |
+
+| Product page | Brewing library |
+|---|---|
+| <img src="docs/screenshots/04-morning-ritual-product-page.png" alt="Coffee product page"> | <img src="docs/screenshots/05-morning-ritual-brewing-guide.png" alt="Interactive brewing guide"> |
+
+| Customer account | Skateboard product |
+|---|---|
+| <img src="docs/screenshots/06-morning-ritual-account.png" alt="Customer account dashboard"> | <img src="docs/screenshots/07-morning-ritual-skateboard.png" alt="Morning Ritual skateboard deck"> |
+
+| Contact confirmation |
+|---|
+| <img src="docs/screenshots/08-morning-ritual-contact-success.png" alt="Successful contact form confirmation"> |
 
 ## Technologies
 
@@ -46,7 +68,7 @@ The interface is available in **English and Romanian** and is built entirely wit
 | Contact form | Web3Forms |
 | Hosting | GitHub Pages |
 
-## Project pages
+## Project structure
 
 - `index.html` — home page;
 - `shop.html` — catalogue, filters, search and sorting;
@@ -58,27 +80,13 @@ The interface is available in **English and Romanian** and is built entirely wit
 - `ritual.html` — sourcing, processing and brand story;
 - `contact.html` — working contact form.
 
-## Run locally
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
 ## Live project
 
 **Website:** https://alinaxa.github.io/morningritual/
 
 ## Project status
 
-The current version is designed, developed, tested and published.
-
-Authentication, real payments, production inventory and delivery-partner integrations would require a secure backend and external service credentials.
+Designed, developed, tested and published.
 
 ## Author
 
