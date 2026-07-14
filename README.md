@@ -1,18 +1,24 @@
-# ☕ Morning Ritual Coffeeshop
+# Morning Ritual — Delicate V6
 
-A cozy, minimalist website for a fictional coffee shop – inspired by real barista love and aesthetic vibes.
+Portfolio-ready front-end built with **HTML, CSS and vanilla JavaScript**.
 
-🌐 **Live site:**  
-👉 [https://alinaxa.github.io/morningritual/index.html](https://alinaxa.github.io/morningritual/index.html)
+This version preserves the approved warm, refined visual design from the original remaster and adds:
 
-## 🔧 Built With
-- HTML5 / CSS3
-- Responsive design with media queries
-- Vanilla JavaScript (light)
-- Hosted on GitHub Pages
+- functional Shop filters, search and sorting;
+- coffee, tea, brewing gear, apparel, handmade objects, skateboard and charity products;
+- dynamic product pages;
+- interactive coffee and tea preparation library;
+- English and Romanian interface selector;
+- cart, demo stock reduction and order history using LocalStorage;
+- Coffee & Tea Journal using LocalStorage;
+- responsive navigation and layouts.
 
-## 📸 Screenshots
-Coming soon...
+## Run locally
 
-## 👩‍💻 Made with love by  
-**Alina Bratu – web designer & aesthetic control freak.**
+```bash
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000`.
+
+Real authentication, production inventory, payments and Glovo integration require a secure backend and partner credentials.
