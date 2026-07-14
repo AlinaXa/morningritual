@@ -1,95 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>Contact – Morning Ritual Coffeeshop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact Morning Ritual for café questions, collaborations, bulk orders and same-day coffee delivery.">
+  <title>Contact — Morning Ritual</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="contact">
+  <div class="topbar">FREE SHIPPING ON ORDERS OVER $40 · SAME-DAY DELIVERY IN BUCHAREST</div>
+<header class="site-header light"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">☼</span><span>MORNING<br>RITUAL</span></a>
+<nav class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="ritual.html">Our Ritual</a><a href="account.html">Account</a><a class="active" href="contact.html">Contact</a></nav>
+<div class="nav-actions"><button class="icon-btn search-shop" aria-label="Search">⌕</button><a class="icon-btn" href="account.html" aria-label="Account">♙</a><a class="icon-btn" href="cart.html" aria-label="Cart">⌑<span class="cart-count">0</span></a><select class="lang-select" aria-label="Language"><option value="en">EN</option><option value="ro">RO</option></select><button class="icon-btn menu-toggle" aria-label="Menu">☰</button></div>
+</div></header>
 
-  <!-- NAVBAR -->
-  <header class="top-header">
-    <div class="nav-container">
-      <div class="nav-left">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/logo.png" alt="Morning Ritual" class="logo-img" />
-        </a>        
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow" data-i18n="contact.eyebrow">VISIT · ORDER · COLLABORATE</p>
+        <h1 data-i18n="contact.title">Let’s talk about your next ritual.</h1>
+        <p data-i18n="contact.lead">Questions, same-day orders, bulk coffee, collaborations, events or a simple hello.</p>
       </div>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="about.html">About us</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact us</a></li>          
-        </ul>
-      </nav>
-    </div>
-  </header>  
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-section page-padding">
-    <div class="contact-container">   
-      <div class="contact-info">
-        <h1 class="contact-title">Let’s Get in Touch</h1>
-        <p class="contact-subtitle">We’d love to hear from you</p>
-        <p class="contact-hours">
-          ☕ Monday – Sunday<br>
-          🕗 8:00 AM – 4:00 PM
-        </p>
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-info-panel">
+          <p class="eyebrow" data-i18n="contact.directEyebrow">DIRECT CONTACT</p>
+          <h2 data-i18n="contact.directTitle">Write to Morning Ritual.</h2>
+          <p data-i18n="contact.directText">Use the form or contact us directly by email.</p>
+
+          <a class="contact-email-link" href="mailto:bratualina.alexandra@gmail.com">
+            bratualina.alexandra@gmail.com
+          </a>
+
+          <div class="contact-detail-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3 data-i18n="contact.sameDay">Same-day orders</h3>
+                <p data-i18n="contact.sameDayText">For coffee, tea, prepared drinks and local delivery questions.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <h3 data-i18n="contact.bulk">Bulk & office orders</h3>
+                <p data-i18n="contact.bulkText">For offices, events, studios, hospitality and recurring supply.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <h3 data-i18n="contact.collaboration">Collaborations</h3>
+                <p data-i18n="contact.collaborationText">For creative projects, local makers, charity products and partnerships.</p>
+              </div>
+            </article>
+          </div>
+        </aside>
+
+        <form
+          class="contact-form-card"
+          id="directContactForm"
+        >
+          <input type="hidden" name="access_key" value="bd667927-2dcb-460c-b350-6e1bfed395ec">
+          <input type="hidden" name="from_name" value="Morning Ritual Website">
+          <input type="hidden" name="replyto" value="">
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-heading">
+            <p class="eyebrow" data-i18n="contact.formEyebrow">SEND A MESSAGE</p>
+            <h2 data-i18n="contact.formTitle">Tell us what you need.</h2>
+          </div>
+
+          <div class="form-grid-two">
+            <label>
+              <span data-i18n="contact.name">Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+
+            <label>
+              <span data-i18n="contact.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="contact.subject">Subject</span>
+            <select name="subject" required>
+              <option value="General question">General question</option>
+              <option value="Same-day order">Same-day order</option>
+              <option value="Bulk or office order">Bulk or office order</option>
+              <option value="Glovo / delivery">Glovo / delivery</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Website enquiry">Website enquiry</option>
+            </select>
+          </label>
+
+          <label>
+            <span data-i18n="contact.message">Message</span>
+            <textarea name="message" rows="7" required></textarea>
+          </label>
+
+          <label class="contact-consent">
+            <input type="checkbox" required>
+            <span data-i18n="contact.consent">I agree to be contacted regarding this message.</span>
+          </label>
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+          <button id="contactSubmitButton" class="button button-gold contact-submit" type="submit" data-i18n="contact.send">
+            Send message
+          </button>
+
+          <div id="contactStatus" class="contact-status" role="status" aria-live="polite">
+            <span class="contact-status-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong id="contactStatusTitle">Ready to send</strong>
+              <p id="contactStatusText">Your message will be sent directly to Morning Ritual.</p>
+            </div>
+          </div>
+        </form>
       </div>
+    </section>
+  </main>
 
-      <form action="https://formsubmit.co/aalinabratu@gmail.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <input type="hidden" name="_next" value="https://alinabratu.github.io/contact.html">
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_captcha" value="false">
-        <button type="submit">Send Message</button>
-      </form>          
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <p>&copy; 2025 Morning Ritual. All rights reserved.</p>
-      <div class="footer-links">
-    </div>
-  </footer>  
-  <script>
-    window.onload = function () {
-      const form = document.querySelector('.contact-form');
-      if (form) form.reset();
-    };
-  </script>  
-  <script>
-    if (window.location.href.includes("contact.html") && document.referrer.includes("formsubmit")) {
-      const thankYou = document.createElement("p");
-      thankYou.textContent = "Thank you for your message!";
-      thankYou.style.color = "#228B22";
-      thankYou.style.marginTop = "20px";
-      thankYou.style.fontSize = "16px";
-      document.querySelector(".contact-form").after(thankYou);
-    }
-  </script>
-  <script>
-    window.onload = function () {
-      const form = document.querySelector(".contact-form");
-      if (form) form.reset();
-      if (window.history.replaceState) {
-        window.history.replaceState(null, null, window.location.href);
-      }
-    };
-  </script>
-  <script>
-    window.addEventListener('pageshow', function(event) {
-      if (event.persisted || performance.navigation.type === 2) {
-        document.querySelector('form').reset();
-      }
-    });
-  </script>  
+  <footer class="footer"><div class="container"><div class="footer-grid">
+<div><a class="brand" href="index.html"><span class="brand-mark">☼</span><span>MORNING<br>RITUAL</span></a><p style="color:rgba(255,255,255,.62);max-width:320px">Specialty coffee, selected tea, brewing knowledge and carefully made objects for your everyday ritual.</p></div>
+<div><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html?category=coffee">Coffee</a><a href="shop.html?category=tea">Tea</a><a href="shop.html?category=gear">Brewing gear</a></div>
+<div><h4>Our Ritual</h4><a href="ritual.html">Who we are</a><a href="ritual.html#sourcing">Sourcing</a><a href="ritual.html#process">Processing</a><a href="ritual.html#loyalty">Loyalty</a></div>
+<div><h4>Help</h4><a href="contact.html">Contact us</a><a href="contact.html">Shipping & delivery</a><a href="brew-guide.html">Brewing guides</a><a href="cart.html">Cart</a></div>
+</div><div class="footer-bottom"><span>© 2026 Morning Ritual. Portfolio concept by Alina Bratu.</span><span>Terms · Privacy · Accessibility</span></div></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
 </html>
